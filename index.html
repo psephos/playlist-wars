@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Playlist Wars</title>
+    <link rel="stylesheet" href="sp://import/css/eve.css">
+	<link rel="stylesheet" href="sp://import/css/api.css">
+    <link rel="stylesheet" href="ui.css">
+	<link rel="stylesheet" href="game.css">
+	<link href='http://fonts.googleapis.com/css?family=Geostar|Michroma|Fredericka+the+Great|Monoton|Bangers|Electrolize' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script type="text/javascript" src="script/async.min.js"></script>
+	<script type="text/javascript" src="starfield.js"></script>
+	<script type="text/javascript" src="playlist-wars.js"></script>
+	<script type="text/javascript" src="testgame.js"></script>
+</head>
+<body>
+
+<canvas id="stars"></canvas>
+
+<div id="header">
+	<span class="main-header-text">Playlist Wars</span>
+</div>
+
+<div id="credits">
+	<span class="credits-item"><a target="_blank" href="http://github.com/jakesgordon/javascript-starfield/">javascript-starfield</a></span>
+	<span class="credits-item"><a target="_blank" href="http://github.com/ptrwtts/kitchensink/">kitchensink</a></span>
+	<span class="credits-item"><a target="_blank" href="http://developer.echonest.com/">echonest</a></span>
+</div>
+
+<div id="current-playlist-container" class="panel">
+	<div id="current-playlist-header" class="header">
+		<span>Your Playlist</span>
+	</div>
+	<div id="current-playlist-addtracks">
+		<span>Drag tracks onto the app icon</span>
+	</div>
+	<div id="current-playlist-tracks">
+	</div>
+</div>
+
+<div id="controls">
+	<div id="bot-mode" class="panel header disabled">
+		<span>Bot Mode</span>
+	</div>
+	<div id="play-online" class="panel header disabled">
+		<span>Play Online</span>
+	</div>
+	<div id="start-again" class="panel header">
+		<span>Reset</span>
+	</div>
+</div>
+
+<div id="gamespace">
+</div>
+
+<div id="lobby" class="panel">
+	<div id="lobby-header" class="header">
+		<span>The Game</span>
+	</div>
+	<div id="lobby-player1" class="subpanel">
+		<div id="lobby-player1-header" class="header">
+			<span>You</span>
+		</div>
+		<div id="lobby-player-1-playlist">
+			<table>
+				<tr>
+					<th>Track</th>
+					<th>Attack</th>
+					<th>Speed</th>
+					<th>Defence</th>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<div id="lobby-player2" class="subpanel">
+		<div id="lobby-player2-header" class="header">
+			<span>Opponent</span>
+		</div>
+		<div id="lobby-player-2-playlist">
+			<table>
+				<tr>
+					<th>Track</th>
+					<th>Attack</th>
+					<th>Speed</th>
+					<th>Defence</th>
+				</tr>
+			</table>
+		</div>
+	</div>
+</div>
+
+<div id="scoreboard" class="panel">
+	<div id="scoreboard-header">
+		<img src="img/win.png" />
+		<span>You Won!</span>
+	</div>
+	<div id="scoreboard-player1">
+		<div id="scoreboard-player1-header" class="player1-text header scoreboard-header">
+			<span>Winner (123)</span>
+		</div>
+		<div id="scoreboard-player1-playlist">
+		</div>
+	</div>
+	<div id="scoreboard-player2">
+		<div id="scoreboard-player2-header" class="player2-text header scoreboard-header">
+			<span>Loser (-456)</span>
+		</div>
+		<div id="scoreboard-player2-playlist">
+		</div>
+	</div>
+	<div id="scoreboard-close">
+		<div id="scoreboard-close" class="panel header">
+			<span>OK</span>
+		</div>
+	</div>
+</div>
+
+<div id="countdown">
+	<span>5</span>
+</div>
+
+</body>
+</html>

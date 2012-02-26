@@ -1,0 +1,19 @@
+{
+    "BundleType": "Application",
+    "AppIcon": {
+        "36x18": "tutorial.png"
+    },
+	"AcceptedLinkTypes":[
+		"track"
+	],
+    "AppName": {
+        "en": "Playlist Wars"
+    },
+    "SupportedLanguages": [
+        "en"
+    ],
+	"RequiredPermissions": [
+		"https://*",
+		"http://*"
+	]
+}
